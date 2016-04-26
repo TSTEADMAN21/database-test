@@ -2,8 +2,8 @@
 <p>Find me in app/views/inventory/all_products.html.erb</p>
 
 
-<% @products.each do |product| %>
-<li><% product.name %>nametest</li>
-<li><% product.price %>pricetest</li>
-<li><% product.category %>cat test</li>
+<%= @products.each do |product| =%>
+<li><%== product.name =%> nametest</li>
+<li><%= product.price =%> pricetest</li>
+<li><%= product.category =%> cat test</li>
 <% end %>
