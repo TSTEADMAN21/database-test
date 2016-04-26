@@ -11,13 +11,13 @@ def new
 end
 
   def one_product
-  	@product = Product.find
+  	@product = Product.find params[:id]
   end
 
 
-
+#per ben
   def by_category
-  	@livingroomproducts = Product.where(category: "livingroom")
+  	@products = Product.where(category: params[:category])
 
   end
 end
